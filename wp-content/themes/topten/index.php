@@ -15,9 +15,6 @@
  */
 
 get_header(); ?>
-<div class="">
-	<?php wd_slider(1); ?>
-</div>
 <div id="page" role="main">
 	<article class="main-content">
 	<?php if ( have_posts() ) : ?>
