@@ -17,16 +17,6 @@
  * @package WordPress
  */
 
-$host = php_uname('n');
-var_dump($host);
-if ($host == "MacBook-Pro-de-Alexandre.local") {
-	define("ENVIRONMENT", "develop");
-}
-
-else{
-	define("ENVIRONMENT", "production");
-}
-
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
 define('DB_NAME', 'topten');
