@@ -50,18 +50,18 @@ require_once( 'library/sticky-posts.php' );
 
 // --> Oeuvres
          $labels_oeuvres_post_type_array = array(
-             'name'                  =>  __('Oeuvres', 'munterlinden'),
-             'singular_name'         =>  __('Oeuvre', 'munterlinden'),
-             'add_new'               =>  __('Ajouter une oeuvre', 'munterlinden'),
-             'add_new_item'          =>  __('Ajouter une oeuvre', 'munterlinden'),
-             'edit_item'             =>  __('Editer l\'oeuvre', 'munterlinden'),
-             'new_item'              =>  __('Nouvelle oeuvre', 'munterlinden'),
-             'view_item'             =>  __('Visualiser l\'oeuvre', 'munterlinden'),
-             'search_items'          =>  __('Rechercher une oeuvre', 'munterlinden'),
-             'not_found'             =>  __('Aucune oeuvre', 'munterlinden'),
-             'not_found_in_trash'    =>  __('Aucune oeuvre dans la corbeille', 'munterlinden'),
+             'name'                  =>  __('Comics', 'munterlinden'),
+             'singular_name'         =>  __('Comics', 'munterlinden'),
+             'add_new'               =>  __('Ajouter un comics', 'munterlinden'),
+             'add_new_item'          =>  __('Ajouter un comics', 'munterlinden'),
+             'edit_item'             =>  __('Editer un comics', 'munterlinden'),
+             'new_item'              =>  __('Nouveau comics', 'munterlinden'),
+             'view_item'             =>  __('Visualiser un comics', 'munterlinden'),
+             'search_items'          =>  __('Rechercher un comics', 'munterlinden'),
+             'not_found'             =>  __('Aucun comics', 'munterlinden'),
+             'not_found_in_trash'    =>  __('Aucun comics dans la corbeille', 'munterlinden'),
              'parent_item_colon'     =>  __('--', 'munterlinden'),
-             'menu_name'             =>  __('Oeuvres', 'munterlinden')
+             'menu_name'             =>  __('Comics', 'munterlinden')
          );
          $supports_oeuvres_post_type_array = array(
              'title',
