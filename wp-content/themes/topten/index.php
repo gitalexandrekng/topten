@@ -15,15 +15,10 @@
  */
 
 get_header(); ?>
+
 <div id="page" role="main">
 	<article class="main-content">
-
-	<?php if ( have_posts() ) :
-		wp_login_form(
-		array(
-			'remember' => false
-		)
-	); ?>
+	<?php if ( have_posts() ) : ?>
 
 		<?php /* Start the Loop */ ?>
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -47,4 +42,5 @@ get_header(); ?>
 	<?php get_sidebar(); ?>
 
 </div>
+
 <?php get_footer(); ?>
