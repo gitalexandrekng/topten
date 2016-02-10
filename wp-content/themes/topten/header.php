@@ -41,13 +41,20 @@
 			</div>
 		</div>
 
+		<!-- RECHERCHE -->
+
+		<div id="searchbar">
+      <div class="row content">
+        <a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/magnifying-glass34.png" alt=""></a>
+        <a href="" class="connect">Se connecter</a>
+        <a href="#" class="button">S'inscrire</a>
+      </div>
+		</div>
+
+    <!-- FIN SEARCH BAR -->
+
 		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
-			<?php /*<div class="top-bar-left show-for-medium">
-				<ul class="menu">
-					<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
-				</ul>
-			</div> */ ?>
-			<div class="top-bar-right">
+			<div style="width:1200px;margin:auto;">
 				<?php foundationpress_top_bar_r(); ?>
 
 				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'topbar' ) : ?>

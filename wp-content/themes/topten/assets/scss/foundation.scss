@@ -69,11 +69,16 @@
   Add your scss files below to structure your project styles
 */
 
+// Homepage
+
 // Modules
 @import "modules/topbar";
 @import "modules/formregister";
 @import "modules/footer";
 @import "modules/sidebar";
+@import "modules/searchbar";
+@import "modules/banniere";
+@import "modules/corps";
 
 // Components
 @import "components/buttons";

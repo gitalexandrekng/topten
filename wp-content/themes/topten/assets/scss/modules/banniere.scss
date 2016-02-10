@@ -1,0 +1,63 @@
+#banniere{
+  height:400px;
+  width:100%;
+  background-image:url(../../images/banniere.jpg);
+  background-size:cover;
+
+  .content{
+    margin:auto;
+    height:100%;
+    max-width:1200px;
+    display:flex;
+
+    .texte{
+      margin-left:auto;
+      margin-top:auto;
+      text-align:center;
+
+      h3{
+        font-family:"Fjalla One", sans-serif;
+        color:white;
+        text-transform: uppercase;
+      }
+
+      .callto{
+        @extend .button;
+        font-family:"Fjalla One", sans-serif;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.bubble{
+  margin-top:-50px;
+  text-align: center;
+
+  #solo{
+    margin-left:10px;
+    margin-right:10px;
+    width:100px;
+    height:100px;
+    background-color:#FFF;
+    border-radius:50%;
+    display:inline-block;
+    border:3px solid white;
+    overflow:hidden;
+
+    .fondu{
+      background:rgba(255,255,255,0.6);
+      overflow:hidden;
+      border-radius:50%;
+      width:100%;
+      height:100%;
+      margin-bottom:-100px;
+      position:relative;
+      transition:background 0.5s;
+
+      &:hover{
+        background:rgba(255,255,255,0);
+      }
+    }
+  }
+}

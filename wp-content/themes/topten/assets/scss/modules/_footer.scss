@@ -2,17 +2,103 @@
 	max-width: 100%;
 	width: 100%;
 	margin: 0 auto;
-	border-top: 1px solid #ccc;
-	margin-top: rem-calc(60);
 
 	#footer {
 		@include grid-row();
-		padding: rem-calc(30) 0;
 
 		ul {
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
+		}
+	}
+}
+
+#bottom{
+	height:400px;
+	width:100%;
+	background-color:#000;
+
+	#fond-footer{
+		display:flex;
+		margin:auto;
+		max-width:1600px;
+		height:400px;
+		background-image:url(../../images/fond-footer.jpg);
+		background-size:cover;
+
+		#super{
+			position:absolute;
+
+			img{
+				margin-top:-30px;
+			}
+		}
+
+		#informations{
+			width:1200px;
+			margin:auto;
+
+			.contenu{
+				color:white;
+				margin-left:auto;
+				max-width:400px;
+
+				.button{
+					@extend .button;
+					text-transform: uppercase;
+					font-family:"Fjalla One", sans-serif;
+					width:200px;
+				}
+
+				li{
+					margin-top:5px;
+					list-style-image:url(../../images/ok.png);
+				}
+
+			}
+		}
+	}
+}
+
+.bottom-texte{
+	height:100px;
+	width:100%;
+	background:#f2f2f2;
+
+	#centered{
+		display:flex;
+		width:1200px;
+		height:100%;
+		margin:auto;
+
+		#social{
+			margin-top:auto;
+			margin-bottom:auto;
+		}
+	}
+}
+
+.situation{
+	height:310px;
+	width:100%;
+	background:#000;
+
+	#contenu{
+		padding-top:20px;
+		padding-bottom:20px;
+		width:1200px;
+		margin:auto;
+		color:white;
+
+		#tel{
+			color:$primary-color;
+		}
+
+		.titre{
+			font-size:22px;
+			font-family:"Fjalla One", sans-serif;
+			text-transform:uppercase;
 		}
 	}
 }
