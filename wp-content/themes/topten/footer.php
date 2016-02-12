@@ -46,10 +46,10 @@
       <div id="centered">
         <div id="social">
           <ul>
-            <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social1.png"></li>
-            <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social2.png"></li>
-            <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social3.png"></li>
-            <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social4.png"></li>
+            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social1.png"></a></li>
+            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social2.png"></a></li>
+            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social3.png"></a></li>
+            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social4.png"></a></li>
           </ul>
         </div><!--
         --><div id="newsletter">
