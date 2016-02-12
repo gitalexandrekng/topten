@@ -26,6 +26,10 @@ body{
 
       #cover{
         padding:5px;
+
+        #ajouter{
+          text-align:center;margin-top:10px;width:130px;margin-left:auto;margin-right:auto;
+        }
       }
 
       h3{
@@ -100,4 +104,16 @@ body{
   text-transform: uppercase;
   margin-top:20px;
   text-align:right;
+}
+
+/****** SINGLE *******/
+#single-post{
+  @extend #page;
+  background-color: #FFF;
+  padding:10px;
+
+  .entry-title
+  {
+    font-family:"Fjalla One", sans-serif;
+  }
 }

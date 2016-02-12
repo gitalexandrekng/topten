@@ -22,18 +22,17 @@
     .button{
       @extend .button;
       text-transform: uppercase;
-      padding:10px;
       width:150px;
     }
 
     .connect{
       @extend .button;
-      padding:10px;
       background:transparent;
       color:black;
 
-      a{
-        background-color:#FFF;
+      &:hover{
+        background-color:#FEFEFE;
+        color:black;
       }
     }
   }

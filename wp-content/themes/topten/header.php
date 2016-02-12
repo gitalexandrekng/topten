@@ -46,10 +46,20 @@
 		<div id="searchbar">
       <div class="row content">
         <a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/magnifying-glass34.png" alt=""></a>
-        <a href="" class="connect">Se connecter</a>
+        <a href="#openModal" class="connect">Se connecter</a>
         <a href="#" class="button">S'inscrire</a>
       </div>
 		</div>
+
+    <div id="openModal" class="modalDialog">
+    	<div>
+    		<a href="#close" title="Close" class="close">X</a>
+    		<h2>Connectez-vous</h2>
+    		<p>
+    		  <?php echo wp_login_form(); ?>
+    		</p>
+    	</div>
+    </div>
 
     <!-- FIN SEARCH BAR -->
 

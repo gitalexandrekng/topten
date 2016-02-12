@@ -60,26 +60,67 @@ $texte = "Le Lorem Ipsum est simplement du faux texte employé dans la compositi
         <div class="small-2 columns" id="cover">
           <h4>The new avenger #5</h4>
           <img src="<?php echo get_stylesheet_directory_uri();?>/images/cover.jpg" alt="">
+          <div class="row" id="ajouter">
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto1.png" alt=""></div>
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto2.png" alt=""></div>
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto3.png" alt=""></div>
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto4.png" alt=""></div>
+          </div>
         </div>
+
         <div class="small-2 columns" id="cover">
           <h4>The new avenger #5</h4>
           <img src="<?php echo get_stylesheet_directory_uri();?>/images/cover.jpg" alt="">
+          <div class="row" id="ajouter">
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto1.png" alt=""></div>
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto2.png" alt=""></div>
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto3.png" alt=""></div>
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto4.png" alt=""></div>
+          </div>
         </div>
+
         <div class="small-2 columns" id="cover">
           <h4>The new avenger #5</h4>
           <img src="<?php echo get_stylesheet_directory_uri();?>/images/cover.jpg" alt="">
+          <div class="row" id="ajouter">
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto1.png" alt=""></div>
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto2.png" alt=""></div>
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto3.png" alt=""></div>
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto4.png" alt=""></div>
+          </div>
         </div>
+
         <div class="small-2 columns" id="cover">
           <h4>The new avenger #5</h4>
           <img src="<?php echo get_stylesheet_directory_uri();?>/images/cover.jpg" alt="">
+          <div class="row" id="ajouter">
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto1.png" alt=""></div>
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto2.png" alt=""></div>
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto3.png" alt=""></div>
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto4.png" alt=""></div>
+          </div>
         </div>
+
         <div class="small-2 columns" id="cover">
           <h4>The new avenger #5</h4>
           <img src="<?php echo get_stylesheet_directory_uri();?>/images/cover.jpg" alt="">
+          <div class="row" id="ajouter">
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto1.png" alt=""></div>
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto2.png" alt=""></div>
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto3.png" alt=""></div>
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto4.png" alt=""></div>
+          </div>
         </div>
+
         <div class="small-2 columns" id="cover">
           <h4>The new avenger #5</h4>
           <img src="<?php echo get_stylesheet_directory_uri();?>/images/cover.jpg" alt="">
+          <div class="row" id="ajouter">
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto1.png" alt=""></div>
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto2.png" alt=""></div>
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto3.png" alt=""></div>
+            <div class="small-3 columns"><img src="<?php echo get_stylesheet_directory_uri();?>/images/picto4.png" alt=""></div>
+          </div>
         </div>
       </div>
     </div>

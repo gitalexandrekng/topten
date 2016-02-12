@@ -17,24 +17,30 @@
 
 		<div id="bottom">
       <div id="fond-footer">
-        <div id="super">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/super-typo.png" alt="">
-        </div>
-        <div id="informations">
-          <div class="contenu">
-            <ul>
-              <li>Accès scan en preview</li>
-              <li>Réservation d'issues en ligne</li>
-              <li>Gestion de vos collections</li>
-              <li>Système d'alerte numéro</li>
-            </ul>
-            <a href="" class="button">S'inscrire</a>
+        <div id="fond-wrapper">
+          <div class="row">
+            <div class="small-8 columns">
+              <div id="super">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/super-typo.png" alt="">
+              </div>
+            </div>
+            <div class="small-4 columns">
+              <div id="informations">
+                <div class="contenu">
+                  <ul>
+                    <li>Accès scan en preview</li>
+                    <li>Réservation d'issues en ligne</li>
+                    <li>Gestion de vos collections</li>
+                    <li>Système d'alerte numéro</li>
+                  </ul>
+                  <a href="" class="button">S'inscrire</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 		</div>
-
-
 
     <div class="bottom-texte">
       <div id="centered">

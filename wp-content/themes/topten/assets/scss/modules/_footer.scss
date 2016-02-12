@@ -27,8 +27,13 @@
 		background-image:url(../../images/fond-footer.jpg);
 		background-size:cover;
 
+		#fond-wrapper{
+			height:400px;
+			width:1200px;
+			margin:auto;
+		}
+
 		#super{
-			position:absolute;
 			z-index:1;
 
 			img{
@@ -37,12 +42,13 @@
 		}
 
 		#informations{
-			width:1200px;
-			margin:auto;
+			display:flex;
+			height:400px;
 
 			.contenu{
 				color:white;
-				margin-left:auto;
+				margin-top:auto;
+				margin-bottom:auto;
 				max-width:400px;
 
 				.button{
