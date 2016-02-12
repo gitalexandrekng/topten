@@ -17,14 +17,15 @@
  */
 
 get_header(); ?>
+<?php include('header-perso.php'); ?>
 
-<div id="page" role="main">
-	<article class="main-content">
+<div id="page-custom" role="main">
+	<div>
 	<?php if ( have_posts() ) : ?>
 
 		<?php /* Start the Loop */ ?>
 		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'content', get_post_format() ); ?>
+			<?php get_template_part( 'content', 'comics', get_post_format() ); ?>
 		<?php endwhile; ?>
 
 		<?php else : ?>
@@ -41,7 +42,6 @@ get_header(); ?>
 		<?php } ?>
 
 	</article>
-	<?php get_sidebar(); ?>
 
 </div>
 

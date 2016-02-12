@@ -8,7 +8,7 @@
  */
 
 get_header(); ?>
-
+<?php include('header-perso.php'); ?>
 <div id="single-post" role="main">
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
@@ -41,6 +41,5 @@ get_header(); ?>
 <?php endwhile;?>
 
 <?php do_action( 'foundationpress_after_content' ); ?>
-<?php get_sidebar(); ?>
 </div>
 <?php get_footer(); ?>
