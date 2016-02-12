@@ -25,6 +25,15 @@
 	<body <?php body_class(); ?>>
 	<?php do_action( 'foundationpress_after_body' ); ?>
 
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 	<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) == 'offcanvas' ) : ?>
 	<div class="off-canvas-wrapper">
 		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
@@ -45,9 +54,31 @@
 
 		<div id="searchbar">
       <div class="row content">
-        <a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/magnifying-glass34.png" alt=""></a>
-        <a href="#openModal" class="connect">Se connecter</a>
-        <a href="#" class="button">S'inscrire</a>
+				<?php
+				if (is_user_logged_in()) {
+        ?>
+
+				<div id="logged">
+				  <div class="contentz">
+				    Bonjour - <?php  ?> <a href="<?php echo wp_logout_url(home_url()) ?>" title="Logout">Logout</a>
+				  </div>
+				</div>
+
+				<?php
+
+				}
+
+				else {
+					?>
+
+					<a href=""><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/magnifying-glass34.png" alt=""></a>
+	        <a href="#openModal" class="connect">Se connecter</a>
+	        <a href="#" class="button">S'inscrire</a>
+
+					<?php
+				}
+				?>
+
       </div>
 		</div>
 

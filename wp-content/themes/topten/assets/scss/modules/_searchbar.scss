@@ -10,7 +10,18 @@
   .content{
     margin:auto;
     text-align:right;
-    vertical-align: top;
+    height:100%;
+
+    #logged{
+      display:flex;
+      height:100%;
+
+      .contentz{
+        margin-top:auto;
+        margin-bottom:auto;
+        margin-left:auto;
+      }
+    }
 
     img{
       margin-right:20px;

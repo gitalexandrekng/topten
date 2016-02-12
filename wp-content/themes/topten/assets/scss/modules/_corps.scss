@@ -1,9 +1,9 @@
 @mixin title-style($color){
+  font-family: "Fjalla One" !important;
   border-left:7px solid $color;
   display:block;
   padding-left:10px;
   text-transform: uppercase;
-  font-family:"Fjalla One", sans-serif;
   margin-bottom:20px;
 }
 
@@ -62,8 +62,8 @@ body{
           }
 
           h2{
-            font-size:20px;
-            font-family:"Fjalla One", sans-serif;
+            font-family:"Fjalla One", sans-serif !important;
+            font-size:20px;  
             text-transform: uppercase;
             margin-bottom:-10px;
           }
@@ -107,13 +107,3 @@ body{
 }
 
 /****** SINGLE *******/
-#single-post{
-  @extend #page;
-  background-color: #FFF;
-  padding:10px;
-
-  .entry-title
-  {
-    font-family:"Fjalla One", sans-serif;
-  }
-}
