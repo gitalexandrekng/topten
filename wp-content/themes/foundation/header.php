@@ -49,10 +49,18 @@
 			</div>-->
 			<div class="nav-contain">
 				<div class="nav-connect">
-                    <div class="loupe"><a href="#searching"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/loupe.png" alt=""></a></div>
-				    <a class="in-button" href="#connect">
-				        Se connecter
-				    </a>
+            	<div class="loupe"><a href="#searching"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/loupe.png" alt=""></a></div>
+							<?php
+							if ( is_user_logged_in() ) {
+								?>
+
+								<a class="in-button" href="<?php echo wp_logout_url( home_url() ); ?>">Déconnexion</a>
+
+								<?php
+							} else {
+									echo '<a class="in-button" href="#connect">Se connecter</a>';
+							}
+							?>
 				</div>
 	        	<div class="top-bar">
 	  				<?php foundationpress_top_bar_r(); ?>
