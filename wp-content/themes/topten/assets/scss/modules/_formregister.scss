@@ -1,8 +1,0 @@
-.fond-rouge{
-    background-color:#F00;
-}
-
-#wp-submit{
-    @include button;
-    @extend .fond-rouge;
-}

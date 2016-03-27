@@ -1,0 +1,158 @@
+$font : "Fjalla One", Helvetica, sans-serif;
+
+#footer-container {
+	max-width: 100%;
+	width: 100%;
+
+	#footer {
+		@include grid-row();
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+.footer-contain{
+	width:100%;
+	height:315px;
+	background:black;
+	position:relative;
+
+	.hero{
+		position:absolute;
+		top:-150px;
+		margin:auto;
+		text-align: center;
+		left:0;
+		right:0;
+
+		.bouton{
+			position:absolute;
+			bottom:0;
+			left:0;
+			right:0;
+			margin:auto;
+			max-width:250px;
+			height:50px;
+
+			.join{
+				@extend .button;
+				background: #c42b2b;
+				width:100%;
+				height:100%;
+				font-family:$font;
+				font-size:18px;
+
+				&:hover{
+					background:darken(#c42b2b, 10%);
+				}
+			}
+		}
+	}
+
+	.fond{
+		background-size:cover;
+		background-image:url(../../images/fond-comics.jpg);
+		max-width:1600px;
+		height:100%;
+		margin:auto;
+	}
+}
+
+.footer-go{
+	width:100%;
+	min-height:95px;
+	background:white;
+	display:flex;
+
+	.contain{
+		max-width:1200px;
+		margin:auto;
+		text-align:center;
+
+		ul{
+			li{
+				float:right;
+				margin-right:90px;
+				font-weight:bold;
+				list-style-image: url(../../images/fleche.png);
+			}
+		}
+	}
+}
+
+.footer-tqt{
+	color:white;
+	background:black;
+	width:100%;
+
+	.contain{
+		padding-top:20px;
+		max-width:1200px;
+		margin:auto;
+
+		ul{
+			li{
+				list-style-type: none;
+				padding-bottom:5px;
+			}
+		}
+
+		.botz{
+			height: 40px;
+			background-color:#3d3d3d;
+			border:0;
+			text-align:center;
+			font-style:italic;
+			font-size:14px;
+
+			&:focus{
+				outline: none;
+				box-shadow: 0px 0px 0px;
+				color:#aaaaaa;
+			}
+		}
+
+		.botz-submit{
+			@extend .button;
+			background:#c42b2b;
+
+			&:hover{
+				background:darken(#c42b2b, 10%);
+			}
+		}
+
+		.socialmedia{
+			ul{
+				li{
+					display:inline-block;
+					margin-right:20px;
+				}
+			}
+		}
+	}
+}
+
+.footer-last{
+	height:75px;
+	width:100%;
+	display:flex;
+
+	.contain{
+		text-align:center;
+		max-width:1200px;
+		margin:auto;
+
+		.copyright{
+			font-size:14px;
+		}
+
+		.mentions{
+			font-weight:bold;
+			color:black;
+		}
+	}
+}
