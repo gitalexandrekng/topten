@@ -10,7 +10,7 @@
 
 ?>
 
-<div id="post-<?php the_ID(); ?>" <?php post_class('blogpost-entry small-3 columns end'); ?>>
+<div id="post-<?php the_ID(); ?>" <?php post_class('blogpost-entry large-3 medium-6 columns end'); ?>>
 	<div class="accueil-box">
         <div class="blue-line"></div>
 

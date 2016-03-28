@@ -27,8 +27,33 @@ $font : "Fjalla One", Helvetica, sans-serif;
     #informations{
       margin:auto;
 
+      @include breakpoint(medium down) {
+        .titre{
+          font-size:30px;
+          text-align:center;
+        }
+       }
+
+       @include breakpoint(small down) {
+         .titre{
+           font-size:22px;
+           text-align:center;
+         }
+        }
+
       .flow{
+
+        @include breakpoint(medium only){
+          width:600px;
+        }
+
         margin-top:20px;
+
+        @include breakpoint(small only){
+          .padding{
+            padding-left:30px;
+          }
+        }
 
         .red{
           @extend .style-bouton;

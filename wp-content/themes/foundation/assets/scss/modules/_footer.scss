@@ -21,6 +21,10 @@ $font : "Fjalla One", Helvetica, sans-serif;
 	background:black;
 	position:relative;
 
+	@include breakpoint(small down){
+
+	}
+
 	.hero{
 		position:absolute;
 		top:-150px;
@@ -68,13 +72,26 @@ $font : "Fjalla One", Helvetica, sans-serif;
 	background:white;
 	display:flex;
 
+	@include breakpoint(medium down){
+		height:200px;
+	}
+
 	.contain{
 		max-width:1200px;
 		margin:auto;
 		text-align:center;
 
+		@include breakpoint(medium down){
+			text-align:left;
+		}
+
 		ul{
 			li{
+
+				@include breakpoint(medium down){
+					float:none;
+				}
+
 				float:right;
 				margin-right:90px;
 				font-weight:bold;
@@ -101,6 +118,19 @@ $font : "Fjalla One", Helvetica, sans-serif;
 			}
 		}
 
+		.in-newsletter{
+			@include breakpoint(medium down){
+				display:flex;
+
+				.newsletter-contain{
+					@include breakpoint(medium down){
+						margin:auto;
+						width:90%;
+					}
+				}
+			}
+		}
+
 		.botz{
 			height: 40px;
 			background-color:#3d3d3d;
@@ -119,6 +149,7 @@ $font : "Fjalla One", Helvetica, sans-serif;
 		.botz-submit{
 			@extend .button;
 			background:#c42b2b;
+			width:100%;
 
 			&:hover{
 				background:darken(#c42b2b, 10%);
@@ -126,6 +157,11 @@ $font : "Fjalla One", Helvetica, sans-serif;
 		}
 
 		.socialmedia{
+
+			@include breakpoint(medium down){
+				text-align: center;
+			}
+
 			ul{
 				li{
 					display:inline-block;

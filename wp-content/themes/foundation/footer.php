@@ -46,7 +46,7 @@
                 <div class="row">
                     <div class="large-6 columns">
                         <div class="row">
-                            <div class="large-4 columns">
+                            <div class="medium-4 columns">
                                 <ul>
                                     <li>Actualités</li>
                                     <li>Comics</li>
@@ -56,7 +56,7 @@
                                     <li>Forum</li>
                                 </ul>
                             </div>
-                            <div class="large-4 columns">
+                            <div class="medium-4 columns">
                                 <ul>
                                     <li>Mon compte</li>
                                     <li>Mes infos</li>
@@ -66,7 +66,7 @@
                                     <li>Deconnexion</li>
                                 </ul>
                             </div>
-                            <div class="large-4 columns">
+                            <div class="medium-4 columns">
                                 <ul>
                                     <li>Nous situer</li>
                                     <li>Nous contacter</li>
@@ -77,23 +77,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="large-6 columns">
-                        <div>S'abonner à la newsletter</div>
-                        <div class="row">
-                            <div class="small-8 columns">
-                                <input class="botz" type="text" placeholder="saisir votre adresse mail...">
-                            </div>
-                            <div class="small-4 columns">
-                                <input class="botz-submit" type="submit">
-                            </div>
-                        </div>
-                        <div class="socialmedia">
-                            <ul>
-                                <li><img src="<?php echo get_stylesheet_directory_uri() ?>/images/social/fb.jpg" alt=""></li>
-                                <li><img src="<?php echo get_stylesheet_directory_uri() ?>/images/social/tw.jpg" alt=""></li>
-                                <li><img src="<?php echo get_stylesheet_directory_uri() ?>/images/social/pint.jpg" alt=""></li>
-                                <li><img src="<?php echo get_stylesheet_directory_uri() ?>/images/social/insta.jpg" alt=""></li>
-                            </ul>
+                    <div class="large-6 columns in-newsletter">
+                        <div class="newsletter-contain">
+													<div>S'abonner à la newsletter</div>
+	                        <div class="row">
+	                            <div class="small-8 columns" style="margin:0px;padding:0px;">
+	                                <input class="botz" type="text" placeholder="saisir votre adresse mail...">
+	                            </div>
+	                            <div class="small-4 columns" style="margin:0px;padding:0px;">
+	                                <input class="botz-submit" type="submit">
+	                            </div>
+	                        </div>
+	                        <div class="socialmedia">
+	                            <ul>
+	                                <li><img src="<?php echo get_stylesheet_directory_uri() ?>/images/social/fb.jpg" alt=""></li>
+	                                <li><img src="<?php echo get_stylesheet_directory_uri() ?>/images/social/tw.jpg" alt=""></li>
+	                                <li><img src="<?php echo get_stylesheet_directory_uri() ?>/images/social/pint.jpg" alt=""></li>
+	                                <li><img src="<?php echo get_stylesheet_directory_uri() ?>/images/social/insta.jpg" alt=""></li>
+	                            </ul>
+	                        </div>
                         </div>
                     </div>
                 </div>
@@ -129,19 +131,32 @@ var owl = $('#slide-top');
         autoplayTimeout: 500,
         autoplayHoverPause:true,
         lazyLoad:true,
+				responsive : {
+			    // breakpoint from 0 up
+			    0 : {
+
+			    },
+			    // breakpoint from 480 up
+			    480 : {
+						items:4,
+			    },
+			    // breakpoint from 768 up
+			    768 : {
+						items:6,
+			    }
+			}
     });
 
-    var owl = $('#slide-center');
+    var owl = $('#slide-centerzz');
         owl.owlCarousel({
-            items:1,
+            items:3,
             loop:true,
-            margin:0,
             autoplay:false,
             autoplaySpeed: 1500,
             autoplayTimeout: 2500,
             autoplayHoverPause:true,
             lazyLoad:true,
-			URLhashListener:true,
+						URLhashListener:true,
         });
 </script>
 </body>

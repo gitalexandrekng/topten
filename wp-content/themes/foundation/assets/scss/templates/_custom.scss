@@ -2,6 +2,11 @@
     display:flex;
     width:100%;
 
+    @include breakpoint(medium down){
+      display:block;
+      text-align:center;
+    }
+
     .commentary_field{
         flex:1;
     }
